@@ -4,7 +4,7 @@
   @Author             : Shyam Nair
   @Group              : 
   @Last Modified By   : Shyam Nair
-  @Last Modified On   : 29/3/2020, 10:45:51 am
+  @Last Modified On   : 29/3/2020, 11:13:08 am
   @Modification Log   : 
   Ver       Date            Author      		    Modification
   1.0    29/3/2020   Shyam Nair     Initial Version
@@ -16,8 +16,7 @@
             $Lightning.use("c:AccountViewerApp", function() {
                 $Lightning.createComponent(
                     "c:accountViewerLWC",
-                    //{msg: "Account Viewer LWC"},
-                    {},
+                    {msg: "Account Viewer"},
                     "datatable",
                     function(cmp) {
                         //console.log('LWC Component Created.');
