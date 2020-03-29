@@ -4,6 +4,6 @@
             {label: 'Account Name', fieldName: 'Name', type: 'text'},
             {label: 'Phone', fieldName: 'Phone', type: 'text'}
         ]);
-        helper.getData(component);
+        helper.getAccounts(component);
     }
 })
