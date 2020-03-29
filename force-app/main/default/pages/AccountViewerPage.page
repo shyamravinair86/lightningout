@@ -1,0 +1,28 @@
+<!--
+  @File Name          : AccountViewerPage.page
+  @Description        : 
+  @Author             : Shyam Nair
+  @Group              : 
+  @Last Modified By   : Shyam Nair
+  @Last Modified On   : 29/3/2020, 1:45:28 pm
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    29/3/2020   Shyam Nair     Initial Version
+-->
+<apex:page showHeader="false" standardStylesheets="false">
+    <apex:includeLightning />
+
+    <div id="datatable"></div>
+    <script>
+        $Lightning.use("c:AccountViewerApp", function() {
+            $Lightning.createComponent(
+                "c:accountViewerLWC",
+                {},
+                "datatable",
+                function(cmp) {
+                    console.log("Lightning LWC Component is Loaded...");
+                }
+            );
+        });
+    </script>
+</apex:page>
