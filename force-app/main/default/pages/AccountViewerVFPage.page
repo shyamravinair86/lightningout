@@ -1,0 +1,30 @@
+<!--
+  @File Name          : AccountViewerVFPage.page
+  @Description        : 
+  @Author             : Shyam Nair
+  @Group              : 
+  @Last Modified By   : Shyam Nair
+  @Last Modified On   : 29/3/2020, 10:45:51 am
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    29/3/2020   Shyam Nair     Initial Version
+-->
+<apex:page showHeader="false" standardStylesheets="false">
+    <apex:includeLightning />
+    <div id="datatable" >
+        <script>
+            $Lightning.use("c:AccountViewerApp", function() {
+                $Lightning.createComponent(
+                    "c:accountViewerLWC",
+                    //{msg: "Account Viewer LWC"},
+                    {},
+                    "datatable",
+                    function(cmp) {
+                        //console.log('LWC Component Created.');
+                        console.log('Lightning Component Created');
+                    }
+                );
+            });
+        </Script>
+    </div>
+</apex:page>
